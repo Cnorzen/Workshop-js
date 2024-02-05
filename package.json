@@ -1,0 +1,24 @@
+{
+  "name": "workshop-main",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "json-server db.json -m ./node_modules/json-server-auth",
+    "start": "concurrently \"npm run server\" \"npm run dev\""
+  },
+  "devDependencies": {
+    "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "bootstrap": "^5.3.2",
+    "concurrently": "^8.2.2",
+    "json-server": "^1.0.0-alpha.23",
+    "json-server-auth": "^2.1.0",
+    "navigo": "^8.11.1"
+  }
+}
